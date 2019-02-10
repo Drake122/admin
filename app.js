@@ -9,7 +9,7 @@ var express = require('express'),
 app.use(express.static(__dirname + '/app'));
 
 
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 4000;
 
 app.get('/', function(req, res) {
     res.sendfile(__dirname + '/app/index.html');
