@@ -1,7 +1,7 @@
 (function () {
     angular.module('app')
         .service('apiService', ['$http', '$window', function ($http, $window) {
-            var domain = 'http://81.2.254.9:1337';
+            var domain = 'http://skovacs.ddns.net:82';
 
             this.login = function (email, password) {
                 return $http.post(domain + '/user/login', {
